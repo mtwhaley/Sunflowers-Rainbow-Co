@@ -1,4 +1,10 @@
 
+function createAllProductCards() {
+    JSONData.forEach(item => {
+        createProductCard(item)
+    });
+}
+
 function createProductCard(item) {
     const resultDiv=document.getElementById("imageSpace")
 
@@ -12,7 +18,14 @@ function createProductCard(item) {
     image.setAttribute("class","productimage")
 
     const text=document.createElement("p")
-    text.innerHTML="<span class='productname'>"+item.Item_Name+"</span><br><br>"
+    console.log(item)
+    console.log(item.Price)
+    if (item.Price==null) {
+        item.Price=0
+    }
+    text.innerHTML="<span class='productname'>"+item.Item_Name+
+        "</span><br><br>$"+
+        item.Price
 
 
     card.appendChild(image)
@@ -20,6 +33,9 @@ function createProductCard(item) {
 
 
     resultDiv.appendChild(card)
+    resultDiv.style.width="98vw"
+    resultDiv.style.paddingLeft="auto"
+    resultDiv.style.paddingRight="auto"
 }
 
 async function LookupByNumber() {
@@ -42,3 +58,5 @@ function searchJSON(number) {
        resolve(null)
     })
 }
+
+createAllProductCards()
