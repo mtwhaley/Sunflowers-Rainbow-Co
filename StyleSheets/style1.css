@@ -7,3 +7,24 @@ html {
 body {
     color: black;
 }
+.productname {
+    font-size: 20px;
+    font-weight: bold;
+}
+.productimage {
+    left: 0;
+    top: 0;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+
+}
+
+.cardstock {
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    border: 2px solid black;
+    padding: 5px;
+}
