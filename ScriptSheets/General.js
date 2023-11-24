@@ -6,7 +6,7 @@ function createAllProductCards() {
 }
 
 function createProductCard(item) {
-    const resultDiv=document.getElementById("imageSpace")
+    const resultDiv=document.getElementById("productSpace")
 
     const card=document.createElement("div")
     card.setAttribute("class", "cardstock")
@@ -33,9 +33,8 @@ function createProductCard(item) {
 
 
     resultDiv.appendChild(card)
-    resultDiv.style.width="98vw"
-    resultDiv.style.paddingLeft="auto"
-    resultDiv.style.paddingRight="auto"
+    resultDiv.style.width="calc(100vw - (100vw - 100%))"
+
 }
 
 async function LookupByNumber() {
