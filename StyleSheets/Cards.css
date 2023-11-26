@@ -1,0 +1,47 @@
+.productname {
+    font-size: 20px;
+    font-weight: bold;
+}
+.productimage {
+    left: 0;
+    top: 0;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+    border-radius: 5px;
+
+}
+
+.cardstock {
+    text-align: center;
+    width: 250px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 0 0 20px;
+    background-color: #ebdd78;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+
+.addButton {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    background-color: #edb826;
+    border-radius: 100%;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: auto;
+    float: right;
+    bottom: 0;
+    margin: 10px;
+
+}
