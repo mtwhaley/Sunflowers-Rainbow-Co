@@ -1,5 +1,5 @@
 const Directory=["Shop", "Custom Order", "Cart"]
-const Navigation=["", "", ""]
+const Navigation=["index.html", "CustomJob.html", ""]
 
 function createNavigation(id=null) {
     const div=document.getElementById("navSpace")
@@ -38,8 +38,12 @@ function setNavigation(currentTab) {
             button.onclick=function() {location.reload()}
         }
         else if (Navigation[i]!="") {
-            
-
+            console.log(button)
+            const link=Navigation[i]
+            button.onclick=function() {
+                location.href=link
+            }
+            console.log("done")
             //add navigation
             
         }
@@ -48,4 +52,3 @@ function setNavigation(currentTab) {
 
 createNavigation("topNav")
 createNavigation("bottomNav")
-setNavigation("Shop")

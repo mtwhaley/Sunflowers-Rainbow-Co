@@ -1,0 +1,14 @@
+#jobFormDiv {
+    text-align: center;
+}
+
+#jobForm {
+    background-color: #ebdd78;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 640px;
+    height: 1220px;
+
+    max-width: 98vw;
+}
