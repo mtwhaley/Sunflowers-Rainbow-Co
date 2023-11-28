@@ -38,7 +38,7 @@ function createProductCard(item) {
     addButton.setAttribute("class", "addButton")
     addButton.innerText="+"
     addButton.onclick=function() {
-        window.alert("add item "+item.Item_Number+" to cart")
+        addToCart(item)
     }
 
 
@@ -66,3 +66,4 @@ function getCardNumber(card) {
     
 }
 
+createAllProductCards()

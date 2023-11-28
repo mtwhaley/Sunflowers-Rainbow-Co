@@ -48,4 +48,3 @@ function searchJSON(number) {
     })
 }
 
-createAllProductCards()
