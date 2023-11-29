@@ -3,28 +3,42 @@ const cartKey="itemsInCart"
 function loadCartDisplay() {
     const cart= getCart()
     const cartDisplay=document.getElementById("cartItems")
-    for (var index=0;index<cart.length;index++) {
-        const item=cart[index]
-
-
+    const cartTitle=document.getElementById("cartTitle")
+    if (cart.length==0) {
         const div=document.createElement("div")
-        div.setAttribute("class","FlexBox")
+        div.setAttribute("class","emptyCartSign")
+        const p=document.createElement("p")
+        p.innerText="Your cart is empty"
 
-        const image=document.createElement("img")
-        let source="../Product Images/"+item.Photo_File_Name+".jpg"
-        image.src=source
-        image.setAttribute("class","productimage")
-
-        div.appendChild(image)
-        div.appendChild(getItemInfoHTML(item))
-        div.appendChild(getQtyPriceHTML(item))
+        div.appendChild(p)
         cartDisplay.appendChild(div)
-        
-        
+    }
+    else {
+        for (var index=0;index<cart.length;index++) {
+            const item=cart[index]
 
 
+            const div=document.createElement("div")
+            div.setAttribute("class","FlexBox")
+
+            const image=document.createElement("img")
+            let source="../Product Images/"+item.Photo_File_Name+".jpg"
+            image.src=source
+            image.setAttribute("class","productimage")
+
+            div.appendChild(image)
+            div.appendChild(getItemInfoHTML(item))
+            div.appendChild(getQtyPriceHTML(item))
+            cartDisplay.appendChild(div)
+            
+            
+
+
+        }
     }
 }
+
+
 
 function getQtyPriceHTML(item) {
     const div=document.createElement("div")
@@ -43,7 +57,7 @@ function getQtyPriceHTML(item) {
     remove.setAttribute("class", "remove")
     remove.innerText="Remove"
     remove.onclick=function() {
-        alert("fixme!")
+        removeItemFromStorage(item)
     }
 
 
@@ -55,6 +69,35 @@ function getQtyPriceHTML(item) {
     return div
 }
 
+function removeItemFromStorage(item) {
+    stringItem=JSON.stringify(item)
+    const qty=Number(localStorage.getItem(cartKey))
+    removed=false
+    for (var i=0;i<qty;i++) {
+        const loadKey="item"+i
+        if (!removed) {
+            
+            const storageItem=localStorage.getItem(loadKey)
+            if (storageItem==stringItem){
+                
+                removed=true
+            } 
+        }
+        if (removed&&i<qty-1) {
+            const nextIndex=i+1
+            const nextKey="item"+nextIndex
+            localStorage.setItem(loadKey, localStorage.getItem(nextKey))
+        }
+        else if (removed&&i==qty-1) {
+            localStorage.removeItem(loadKey)
+        }
+        
+    }
+    incrementCart(-1)
+    location.reload()
+}
+
+
 function getItemInfoHTML(item) {
     const p=document.createElement("p")
     p.innerHTML=item.Item_Name+"<br>"
@@ -65,25 +108,29 @@ function getItemInfoHTML(item) {
 }
 
 function checkForCart() {
-    if (localStorage.getItem(cartKey)!=true) {return false}
-    else {return true}
+    console.log(localStorage.getItem(cartKey))
+    if (localStorage.getItem(cartKey)!=null) {return true}
+    else {return false}
 
 }
 
-function createCart() {
+
+function createEmptyCart() {
     localStorage.setItem(cartKey,0)
 }
 
-function addToCart(item) {
-    if (!checkForCart()) {
-        createCart()
-    }
 
-    const saveIndex=localStorage.getItem(cartKey).toString()
+function addToCart(item) {
+    console.log(checkForCart())
+    if (!checkForCart()) {
+        createEmptyCart()
+    }
+    const saveIndex=(localStorage.getItem(cartKey)).toString()
     const saveKey="item"+saveIndex
     const JSONitem=JSON.stringify(item)
     localStorage.setItem(saveKey, JSONitem)
     incrementCart()
+
 }
 
 function incrementCart(increment=1) {
@@ -105,5 +152,3 @@ function getCart() {
     }
     return itemArray
 }
-
-loadCartDisplay()

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../StyleSheets/Cards.css">
         <link rel="stylesheet" href="../StyleSheets/ShoppingCart.css">
     </head>
-    <body>
+    <body style="padding-bottom: 70px;">
 
         <div id="header">
             <img src="../Header Image.png" id="headerImage" alt="Sunflower & Rainbow Cover Photo">
@@ -20,10 +20,10 @@
 
         
         <div id="cartItems">
-            <p>My Cart:</p>
+            <p id="cartTitle">My Cart:</p><hr>
         </div>
 
-
+        
 
         <div id="navSpace"></div>
 
@@ -34,6 +34,11 @@
         <script>
             setNavigation("ShoppingCart")
             loadCartDisplay()
+
+            
+            document.getElementById("bottomNav").style.position="fixed"
+            document.getElementById("bottomNav").style.bottom="0"
+            
         </script>
     </body>
 </html>
