@@ -58,6 +58,7 @@ function getQtyPriceHTML(item) {
     remove.innerText="Remove"
     remove.onclick=function() {
         removeItemFromStorage(item)
+        location.reload()
     }
 
 
@@ -94,7 +95,6 @@ function removeItemFromStorage(item) {
         
     }
     incrementCart(-1)
-    location.reload()
 }
 
 
@@ -151,4 +151,16 @@ function getCart() {
         
     }
     return itemArray
+}
+
+function isInCart(item) {
+    const qty=localStorage.getItem(cartKey)
+    if (qty==undefined) {return false}
+    const JSONitem=JSON.stringify(item)
+    for (var i=0;i<qty;i++) {
+        const loadKey="item"+i
+        const cartItem=localStorage.getItem(loadKey)
+        if (cartItem==JSONitem) {return true}
+    }
+    return false
 }

@@ -45,3 +45,21 @@
     margin: 10px;
 
 }
+
+.checkButton {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    background-color: #37e615;
+    border-radius: 100%;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: auto;
+    float: right;
+    bottom: 0;
+    margin: 10px;
+}

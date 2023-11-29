@@ -33,13 +33,24 @@ function createProductCard(item) {
         item.Price
 
 
-
+    
     const addButton=document.createElement("button")
-    addButton.setAttribute("class", "addButton")
-    addButton.innerText="+"
-    addButton.onclick=function() {
-        addToCart(item)
+    if (isInCart(item)) {
+        addButton.setAttribute("class", "checkButton")
+        addButton.innerHTML="&#10003;"
+        addButton.onclick=function() {
+            toggleFunction(item, addButton)
+        }
     }
+    else {
+        addButton.setAttribute("class", "addButton")
+        addButton.innerText="+"
+        addButton.onclick=function() {
+            toggleFunction(item, addButton)
+
+        }
+    }
+    
 
 
     card.appendChild(image)
@@ -65,5 +76,21 @@ function getCardNumber(card) {
     })
     
 }
+
+function toggleFunction(item, button) {
+    
+    if (button.innerHTML=="+") {
+        button.innerHTML="&#10003;"
+        button.setAttribute("class","checkButton")
+        addToCart(item)
+
+    }
+    else {
+        button.innerHTML="+"
+        button.setAttribute("class", "addButton")
+        removeItemFromStorage(item)
+    }
+}
+
 
 createAllProductCards()
