@@ -1,9 +1,11 @@
 const cartKey="itemsInCart"
+const subtotalID="sub"
 
 function loadCartDisplay() {
     const cart= getCart()
     const cartDisplay=document.getElementById("cartItems")
     const cartTitle=document.getElementById("cartTitle")
+    var idArray=[]
     if (cart.length==0) {
         const div=document.createElement("div")
         div.setAttribute("class","emptyCartSign")
@@ -19,22 +21,46 @@ function loadCartDisplay() {
 
 
             const div=document.createElement("div")
-            div.setAttribute("class","FlexBox")
+            div.setAttribute("class","cartProduct")
+
 
             const image=document.createElement("img")
             let source="../Product Images/"+item.Photo_File_Name+".jpg"
             image.src=source
             image.setAttribute("class","productimage")
-
             div.appendChild(image)
             div.appendChild(getItemInfoHTML(item))
             div.appendChild(getQtyPriceHTML(item))
+
             cartDisplay.appendChild(div)
+            idArray.push(item.Item_Number+"price")
             
             
 
 
         }
+        
+
+        const subtotalSpacer=document.createElement("p")
+        subtotalSpacer.innerHTML="<br><br><hr><br>"
+
+        cartDisplay.appendChild(subtotalSpacer)
+
+        
+        const totals=document.createElement("div")
+        const totalsText=document.createElement("p")
+        totals.setAttribute("class", "total")
+
+        var subtotal=0
+        for (var i=0;i<idArray.length;i++) {
+            subtotal+=Number((document.getElementById(idArray[i]).innerText).substring(1))
+        }
+        totalsText.innerHTML="subtotal: $<span id='"+subtotalID+"'>"+subtotal+"</span>"
+
+        totals.appendChild(totalsText)
+        cartDisplay.appendChild(totals)
+        
+        
     }
 }
 
@@ -42,15 +68,30 @@ function loadCartDisplay() {
 
 function getQtyPriceHTML(item) {
     const div=document.createElement("div")
+    div.setAttribute("class","priceDiv")
     const qty=document.createElement("input")
-    const id=item.Item_Number+"qty"
+    const qtyid=item.Item_Number+"qty"
+    const priceid=item.Item_Number+"price"
     qty.setAttribute("class", "qty")
-    qty.setAttribute("id", id)
+    qty.setAttribute("id", qtyid)
 
     qty.setAttribute("type","number")
     qty.setAttribute("min","1")
     qty.setAttribute("max","99")
     qty.setAttribute("value", "1")
+    qty.onchange=function() {
+        const thisQTY=document.getElementById(qtyid).value
+        const itemPrice=document.getElementById(priceid)
+        const previousPrice=Number((itemPrice.innerText).substring(1))
+        const newPrice=item.Price*thisQTY
+        itemPrice.innerText="$"+(newPrice)
+
+        const difference=newPrice-previousPrice
+        const previousSubtotal=Number(document.getElementById(subtotalID).innerText)
+        const newSubtotal=previousSubtotal+difference
+        document.getElementById(subtotalID).innerText=newSubtotal
+
+    }
     
 
     const remove=document.createElement("button")
@@ -62,11 +103,13 @@ function getQtyPriceHTML(item) {
     }
 
 
-    document.createElement("p")
-
+    const p=document.createElement("p")
+    p.setAttribute("id",priceid)
+    p.innerText="$"+item.Price
 
     div.appendChild(qty)
     div.appendChild(remove)
+    div.appendChild(p)
     return div
 }
 
@@ -99,12 +142,16 @@ function removeItemFromStorage(item) {
 
 
 function getItemInfoHTML(item) {
+    const div=document.createElement("div")
     const p=document.createElement("p")
+    div.setAttribute("class","nameDiv")
     p.innerHTML=item.Item_Name+"<br>"
     p.innerHTML+="<span style='font-size: 16px;'>&nbsp&nbsp"+item.Item_Description+"<br></span>"
     p.setAttribute("class","info")
 
-    return p
+    div.appendChild(p)
+
+    return div
 }
 
 function checkForCart() {
