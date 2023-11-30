@@ -1,5 +1,6 @@
 const Directory=["Shop", "Custom Order", "Cart"]
 const Navigation=["index.html", "CustomJob.html", "ShoppingCart.html"]
+const cartItemsID="cartSignifier"
 
 function createNavigation(id=null) {
     const div=document.getElementById("navSpace")
@@ -51,5 +52,33 @@ function setNavigation(currentTab) {
     }
 }
 
+function createCartNumber() {
+    const div=document.createElement("div")
+    div.setAttribute("class","cartQty")
+    div.setAttribute("id",cartItemsID)
+
+    document.getElementById("navSpace").appendChild(div)
+    updateCartNumber()
+
+}
+
+function updateCartNumber() {
+    const div=document.getElementById(cartItemsID)
+    const qtyString=localStorage.getItem(cartKey)
+    var qty
+    if (qtyString==null) {qty=0}
+    else {qty=Number(qtyString)}
+    div.innerText=qty
+
+    if (qty==0) {
+        div.style.visibility="hidden"
+    }
+    else {
+        div.style.visibility="visible"
+    }
+    
+}
+
 createNavigation("topNav")
 createNavigation("bottomNav")
+createCartNumber()

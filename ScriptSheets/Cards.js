@@ -48,6 +48,7 @@ function createProductCard(item) {
         addButton.onclick=function() {
             toggleFunction(item, addButton)
 
+
         }
     }
     
@@ -90,6 +91,7 @@ function toggleFunction(item, button) {
         button.setAttribute("class", "addButton")
         removeItemFromStorage(item)
     }
+    updateCartNumber()
 }
 
 
