@@ -1,5 +1,7 @@
 const cartKey="itemsInCart"
 const subtotalID="sub"
+const taxRate=0.065
+const shippingCost=5
 
 function loadCartDisplay() {
     const cart= getCart()
@@ -56,6 +58,10 @@ function loadCartDisplay() {
             subtotal+=Number((document.getElementById(idArray[i]).innerText).substring(1))
         }
         totalsText.innerHTML="subtotal: $<span id='"+subtotalID+"'>"+subtotal+"</span>"
+        totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: 18px;'>shipping: $"+shippingCost.toFixed(2)+"</span>"
+        totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: 18px'>taxes: $<span id='taxAmount'>"+getTaxes(subtotal)+"</span></span>"
+        totalsText.innerHTML+="<br><br><br>total: $<span id='totalAmount'>"+getTotal(subtotal)+"</span>"
+
 
         totals.appendChild(totalsText)
         cartDisplay.appendChild(totals)
@@ -64,7 +70,25 @@ function loadCartDisplay() {
     }
 }
 
+function updateTotals(subtotal) {
+    const taxes=document.getElementById("taxAmount")
+    const taxTotal=subtotal*taxRate
+    taxes.innerText=taxTotal.toFixed(2)
 
+    const total=document.getElementById("totalAmount")
+    const grandTotal=subtotal+shippingCost+taxTotal
+    total.innerText=grandTotal.toFixed(2)
+}
+
+function getTotal(subtotal) {
+    const total=subtotal+shippingCost+Number(getTaxes(subtotal))
+    return total.toFixed(2)
+}
+
+function getTaxes(subtotal) {
+    const taxes=((subtotal+shippingCost)*taxRate).toFixed(2)
+    return taxes
+}
 
 function getQtyPriceHTML(item) {
     const div=document.createElement("div")
@@ -84,12 +108,13 @@ function getQtyPriceHTML(item) {
         const itemPrice=document.getElementById(priceid)
         const previousPrice=Number((itemPrice.innerText).substring(1))
         const newPrice=item.Price*thisQTY
-        itemPrice.innerText="$"+(newPrice)
+        itemPrice.innerText="$"+(newPrice.toFixed(2))
 
         const difference=newPrice-previousPrice
         const previousSubtotal=Number(document.getElementById(subtotalID).innerText)
         const newSubtotal=previousSubtotal+difference
-        document.getElementById(subtotalID).innerText=newSubtotal
+        document.getElementById(subtotalID).innerText=newSubtotal.toFixed(2)
+        updateTotals(newSubtotal)
 
     }
     
