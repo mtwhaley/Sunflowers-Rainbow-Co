@@ -31,3 +31,40 @@ table, tr, td {
 
     
 }
+
+
+.largeIMG {
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.shade {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top:0;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+
+
+}
+.selfDestruct {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.selfDestruct:hover {
+    background-color: rgb(90, 90, 90);
+}

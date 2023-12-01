@@ -57,7 +57,7 @@ function loadCartDisplay() {
         for (var i=0;i<idArray.length;i++) {
             subtotal+=Number((document.getElementById(idArray[i]).innerText).substring(1))
         }
-        totalsText.innerHTML="subtotal: $<span id='"+subtotalID+"'>"+subtotal+"</span>"
+        totalsText.innerHTML="subtotal: $<span id='"+subtotalID+"'>"+(subtotal.toFixed(2))+"</span>"
         totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: 18px;'>shipping: $"+shippingCost.toFixed(2)+"</span>"
         totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: 18px'>taxes: $<span id='taxAmount'>"+getTaxes(subtotal)+"</span></span>"
         totalsText.innerHTML+="<br><br><br>total: $<span id='totalAmount'>"+getTotal(subtotal)+"</span>"
@@ -103,6 +103,7 @@ function getQtyPriceHTML(item) {
     qty.setAttribute("min","1")
     qty.setAttribute("max","99")
     qty.setAttribute("value", "1")
+    qty.style.marginRight="5px"
     qty.onchange=function() {
         const thisQTY=document.getElementById(qtyid).value
         const itemPrice=document.getElementById(priceid)
@@ -130,7 +131,10 @@ function getQtyPriceHTML(item) {
 
     const p=document.createElement("p")
     p.setAttribute("id",priceid)
-    p.innerText="$"+item.Price
+    p.innerText="$"+(item.Price).toFixed(2)
+    p.style.marginRight="65px"
+    p.style.width="100px"
+    p.style.right="0"
 
     div.appendChild(qty)
     div.appendChild(remove)

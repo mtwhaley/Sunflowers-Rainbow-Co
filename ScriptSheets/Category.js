@@ -9,23 +9,30 @@ function ResetCategoryBackgrounds() {
     });
 }
 
-async function filterCategories(catID) {
-    const categoryClicker=document.getElementById(catID)
-    ResetCategoryBackgrounds()
-    categoryClicker.style.backgroundColor="#edb826"
+async function filterCategories(catID=undefined) {
+    if (catID!=undefined) {
+        const categoryClicker=document.getElementById(catID)
+        ResetCategoryBackgrounds()
+        categoryClicker.style.backgroundColor="#edb826"
 
+    }
     const productDiv=document.getElementById("productSpace")
     const elements=productDiv.childNodes
     for (var i=0;i<elements.length;i++) {
         if(elements[i].nodeName=="DIV") {   //cards
-            let itemNumber= await getCardNumber(elements[i])
-            const item=await searchJSON(itemNumber)
-            let check=itemCategoryCheck(item, catID)
-            if (check==true) {
-                elements[i].style.display="block"
+            if (catID!=undefined) {
+                let itemNumber= await getCardNumber(elements[i])
+                const item=await searchJSON(itemNumber)
+                let check=itemCategoryCheck(item, catID)
+                if (check==true) {
+                    elements[i].style.display="block"
+                }
+                else {
+                    elements[i].style.display="none"
+                }
             }
             else {
-                elements[i].style.display="none"
+                elements[i].style.display="block"
             }
         }
     };

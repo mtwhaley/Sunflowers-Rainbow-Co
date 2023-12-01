@@ -14,14 +14,13 @@ function createProductCard(item) {
 
 
     const image=document.createElement("img")
-    let source="../Product Images/"+item.Photo_File_Name+".jpg"
+    const source="../Product Images/"+item.Photo_File_Name+".jpg"
     image.src=source
     let id="img"+item.Item_Number
     image.setAttribute("id", id)
     image.setAttribute("class","productimage")
     image.onclick=function() {
-        window.open(image.src)
-        //window.alert(item.Item_Number)
+        viewImage(source)
     }
 
     const text=document.createElement("p")
@@ -61,6 +60,35 @@ function createProductCard(item) {
 
     resultDiv.appendChild(card)
     resultDiv.style.width="calc(100vw - (100vw - 100%))"
+
+}
+
+function removeImageView() {
+    const html=document.getElementsByTagName("html")[0]
+    const backdrop=document.getElementsByClassName("shade")[0]
+    html.removeChild(backdrop)
+}
+
+function viewImage(source) {
+    const backdrop=document.createElement("div")
+    backdrop.setAttribute("class","shade")
+    document.getElementsByTagName("html")[0].appendChild(backdrop)
+
+    const img=document.createElement("img")
+    img.src=source
+    img.setAttribute("class","largeIMG")
+
+    const button=document.createElement("button")
+    button.setAttribute("class","selfDestruct")
+    button.innerText="X"
+    button.onclick=function() {
+        removeImageView()
+    }
+    
+    backdrop.appendChild(img)
+    backdrop.appendChild(button)
+
+
 
 }
 
