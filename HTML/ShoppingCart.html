@@ -24,6 +24,10 @@
             </div>
             <div id="payment">
                 <p>payment processing goes here</p>
+                <br><br><br><br><br>
+                <button onclick="successfulOrder()">successful payment</button>
+                <button onclick="cancelledOrder()">failed payment</button>
+                <br><button onclick="loadCartDisplay()">load cart</button>
             </div>
         </div>
 
@@ -36,6 +40,7 @@
         <script src="../ScriptSheets/ShoppingCart.js"></script>
         
         <script src="../ScriptSheets/Nav.js"></script>
+        <script src="../ScriptSheets/Transaction.js"></script>
         <script>
             setNavigation("ShoppingCart")
             loadCartDisplay()
@@ -44,6 +49,7 @@
             document.getElementById("bottomNav").style.position="fixed"
             document.getElementById("bottomNav").style.bottom="0"
             
+            console.log(jQuery.browser)
         </script>
     </body>
 </html>

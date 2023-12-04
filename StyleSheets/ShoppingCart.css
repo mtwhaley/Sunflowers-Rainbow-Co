@@ -24,6 +24,16 @@
 
 }
 
+#payment button {
+    width: 25%;
+    height: 50px;
+    border-width: 2px;
+    border-radius: 2px;
+}
+#payment button:hover {
+    background-color: ghostwhite;
+}
+
 #cartItems {
     background-color: #ebdd78;
     width: 100%;
