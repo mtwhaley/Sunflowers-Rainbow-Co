@@ -14,7 +14,7 @@ function createProductCard(item) {
 
 
     const image=document.createElement("img")
-    const source="../Product Images/"+item.Photo_File_Name+".jpg"
+    const source="Product Images/"+item.Photo_File_Name+".jpg"
     image.src=source
     let id="img"+item.Item_Number
     image.setAttribute("id", id)

@@ -48,6 +48,10 @@
 
 }
 
+.addButton:hover {
+    background-color: #ffde82;
+}
+
 .checkButton {
     position: relative;
     height: 45px;
