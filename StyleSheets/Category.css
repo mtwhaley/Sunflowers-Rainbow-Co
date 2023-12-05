@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .categoryName {
     display: block;
     padding-top: 5px;
@@ -20,6 +27,8 @@
 }
 
 #categorySpace {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 20px;
     background-color: #ffe8ba;

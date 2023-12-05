@@ -1,3 +1,5 @@
+
+
 #jobFormDiv {
     text-align: center;
 }
@@ -7,7 +9,8 @@
     margin-top: 20px;
     border-radius: 5px;
     border: 2px solid black;
-    box-shadow: 2px 2px 2px;
+    -webkit-box-shadow: 2px 2px 2px;
+            box-shadow: 2px 2px 2px;
     width: 640px;
     height: 1220px;
 
