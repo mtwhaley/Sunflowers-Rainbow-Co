@@ -27,7 +27,7 @@ function loadCartDisplay() {
 
 
             const image=document.createElement("img")
-            let source="../Product Images/"+item.Photo_File_Name+".jpg"
+            let source="Product Images/"+item.Photo_File_Name+".jpg"
             image.src=source
             image.setAttribute("class","productimage")
             div.appendChild(image)
