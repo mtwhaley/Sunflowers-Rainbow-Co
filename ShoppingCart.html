@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="StyleSheets/Nav.css">
         <link rel="stylesheet" href="StyleSheets/Cards.css">
         <link rel="stylesheet" href="StyleSheets/ShoppingCart.css">
+        <link rel="stylesheet" href="StyleSheets/Forms.css">
     </head>
     <body style="padding-bottom: 70px;">
 
@@ -23,12 +24,33 @@
                 <p id="cartTitle">My Cart:</p><hr>
             </div>
             <div id="payment">
-                <p>payment processing goes here</p>
-                <br><br><br><br><br>
-                <button onclick="successfulOrder()">successful payment</button>
-                <button onclick="cancelledOrder()">failed payment</button>
+                <div id="contactInfo">
+                    <form action="http://localhost/test.php" method="post">
+                        <p style="font-weight: bold; font-size: 22px;">Shipping Information:</p>
+                        <hr><br>
+                        <label for="fullname">Full Name: </label><br>
+                        <input type="text" id="fullname" name="fullname">
+                        <br><br>
+                        <label for="address">Address: </label><br>
+                        <input type="text" id="address" name="address">
+                        <br><br>
+                        <label for="city">City: </label><br>
+                        <input type="text" id="city" name="city">
+                        <br><br>
+                        <label for="state">State: </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="zip">Zipcode: </label>
+                        <br>
+                        <input type="text" id="state" name="state" style="width: 40%;">
+                        &nbsp;&nbsp;
+                        <input type="text" name="zip" id="zip" style="width: 40%;">
+                        <br><br><br>
+                        <input type="submit" id="toCheckout" value="Continue to checkout">
+                    </form>
+                </div>
             </div>
         </div>
+        
 
         
 
