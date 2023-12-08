@@ -19,7 +19,7 @@
         <div id="jobFormDiv">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1efJqasMKhrFfntPqVUhHT7imhRNBTJI81FLCV0XFjOu1uQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" id="jobForm">Loading…</iframe>    
         </div>
-        
+        <div style="height: 60px;"></div>
         <div id="navSpace"></div>
 
     </body>
@@ -27,5 +27,7 @@
     <script src="ScriptSheets/Nav.js"></script>
     <script>
         setNavigation("Custom Order")
+        document.getElementById("bottomNav").style.position="fixed"
+        document.getElementById("bottomNav").style.bottom="0"
     </script>
 </html>

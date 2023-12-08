@@ -240,3 +240,11 @@ function isInCart(item) {
     }
     return false
 }
+
+function setFormData() {
+    document.getElementById("cost").value=document.getElementById("totalAmount").innerText
+    const numItems=localStorage.getItem(cartKey)
+    var arr=[]
+    const divs=$(".cartProduct")
+    alert(divs.length)
+}

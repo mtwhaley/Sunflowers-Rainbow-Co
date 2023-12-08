@@ -19,7 +19,7 @@
         </div>
 
 
-        <div id="cartTable" class="Flexbox">
+        <div id="cartTable" class="Flexbox" style="justify-content: space-around;">
             <div id="cartItems">
                 <p id="cartTitle">My Cart:</p><hr>
             </div>
@@ -45,7 +45,10 @@
                         &nbsp;&nbsp;
                         <input type="text" name="zip" id="zip" style="width: 40%;">
                         <br><br><br>
-                        <input type="submit" id="toCheckout" value="Continue to checkout">
+                        <input type="hidden" name="cost" id="cost">
+                        <input type="hidden" name="items" id="items">
+                        <input type="submit" id="toCheckout" value="Continue to checkout" onclick="setFormData()">
+                        
                     </form>
                 </div>
             </div>
@@ -63,6 +66,7 @@
         <script src="ScriptSheets/Nav.js"></script>
         <script src="ScriptSheets/Transaction.js"></script>
         <script>
+            
             setNavigation("ShoppingCart")
             loadCartDisplay()
 
