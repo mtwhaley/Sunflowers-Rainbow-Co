@@ -10,9 +10,9 @@ function ResetCategoryBackgrounds() {
 }
 
 async function filterCategories(catID=undefined) {
+    ResetCategoryBackgrounds()
     if (catID!=undefined) {
         const categoryClicker=document.getElementById(catID)
-        ResetCategoryBackgrounds()
         categoryClicker.style.backgroundColor="#edb826"
 
     }

@@ -30,6 +30,8 @@ function loadCartDisplay() {
             let source="Product Images/"+item.Photo_File_Name+".jpg"
             image.src=source
             image.setAttribute("class","productimage")
+            const imgID=item.Item_Number
+            image.setAttribute("id",imgID)
             div.appendChild(image)
             div.appendChild(getItemInfoHTML(item))
             div.appendChild(getQtyPriceHTML(item))
@@ -245,6 +247,21 @@ function setFormData() {
     document.getElementById("cost").value=document.getElementById("totalAmount").innerText
     const numItems=localStorage.getItem(cartKey)
     var arr=[]
-    const divs=$(".cartProduct")
-    alert(divs.length)
+
+    const products=document.querySelectorAll(".cartProduct")
+    for (var i=0;i<products.length;i++) {
+        const elements=products[i].children
+        for (var j=0;j<elements.length;j++) {
+            if (elements[j].tagName=="IMG") {
+                const qtyID=elements[j].id+"qty"
+                const appendage=[elements[j].id, document.getElementById(qtyID).value]
+                arr.push(appendage)
+            }
+
+        }
+    }
+    const JSONData=JSON.stringify(arr)
+
+    document.getElementById("order").value=JSONData
+    
 }
