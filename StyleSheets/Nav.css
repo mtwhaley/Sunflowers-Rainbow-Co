@@ -19,7 +19,7 @@
     text-align: center;
     vertical-align: middle;
     color: white;
-    padding-top: 0.2vh;
+    padding-top: calc(0.5vh - 3px);
     font-size: calc(2vh + 3px);
     padding: auto;
 }
@@ -38,7 +38,7 @@
 
 #topNav {
     position: absolute;
-    top: calc(14vh);
+    top: calc(15vh);
     right: 0;
     border-right: none;
     border-bottom: none;
