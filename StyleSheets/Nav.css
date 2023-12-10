@@ -7,8 +7,8 @@
 
 .cartQty {
     position: absolute;
-    width: calc(3vh + 5px);
-    height: calc(3vh + 5px);
+    width: calc(2.5vh + 8px);
+    height: calc(2.5vh + 8px);
     min-width: 18px;
     min-height: 18px;
     border-radius: 50%;
@@ -19,7 +19,7 @@
     text-align: center;
     color: white;
     padding-top: calc(1.8vh - 10px);
-    font-size: calc(1.4vh + 4px);
+    font-size: calc(1.8vh);
     padding: auto;
 }
 
@@ -29,7 +29,7 @@
     font-size: calc(10px +3vh);
     table-layout: fixed;
     width: auto;
-    border: calc(0.1vh + 1px) solid black;
+    border: 0.15vh solid black;
     background-color: #916943;
     border-radius: 5px 5px 0 0;
     border-bottom: none;
@@ -72,7 +72,7 @@
     height: 4.8vh;
     background-color: white;
     border-radius: 5px;
-    border: calc(0.1vh + 1px) solid black;
+    border: 0.25vh solid black;
     font-weight: bold;
     font-size: calc(1.8vh + 2px);
     margin: 0;
