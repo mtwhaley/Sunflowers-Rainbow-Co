@@ -22,7 +22,7 @@
 #categoryText {
     margin: 10px;
     font-weight: bold;
-    font-size: calc(2vh + 5px);
+    font-size: calc(3vh - 2px);
     width: 100%;
 }
 
@@ -32,8 +32,8 @@
     display: flex;
     margin-top: 20px;
     background-color: #ffe8ba;
-    width: 20vw;
-    min-width: 150px;
+    width: 20vh;
+    /*min-width: 150px;*/
     height: auto;
     vertical-align: top;
     border-width: 2px 1px;
