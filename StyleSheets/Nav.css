@@ -38,7 +38,7 @@
 
 #topNav {
     position: absolute;
-    top: calc(15vh - 5px);
+    top: calc(15vh - 4.8px);
     right: 0;
     border-right: none;
     border-bottom: none;

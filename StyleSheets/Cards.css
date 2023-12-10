@@ -1,6 +1,6 @@
 
 .productname {
-    font-size: calc(12px + 1vh);
+    font-size: calc(5px + 2vh);
     font-weight: bold;
 }
 .productimage {
@@ -28,7 +28,7 @@
     -webkit-box-shadow: 2px 2px 2px black;
             box-shadow: 2px 2px 2px black;
 
-    font-size: calc(10px + 1vh);
+    font-size: calc(3px + 2vh);
 }
 
 
