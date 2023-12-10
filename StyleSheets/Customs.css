@@ -2,7 +2,7 @@
 
 #jobFormDiv {
     text-align: center;
-    width: 90vh;
+    width: calc(98vw - 8px);
     height: 170vh;
     background-color: #ebdd78;
     margin-top: 20px;
