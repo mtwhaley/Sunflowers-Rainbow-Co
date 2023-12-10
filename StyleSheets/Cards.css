@@ -1,6 +1,6 @@
 
 .productname {
-    font-size: calc(18px + 0.2vw);
+    font-size: calc(16px + 0.4vh);
     font-weight: bold;
 }
 .productimage {
@@ -16,7 +16,7 @@
 
 .cardstock {
     text-align: center;
-    width: 15vw;
+    width: 30vh;
     min-width: 250px;
     height: 24vw;
     min-height: 365px;
