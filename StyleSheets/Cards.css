@@ -18,7 +18,7 @@
     text-align: center;
     width: 28vh;
     min-width: 250px;
-    height: calc(45vh + 10px); /*width + name font size + price font size + addbutton height + margins*/
+    height: calc(48vh - 10px); /*width + name font size + price font size + addbutton height + margins*/
     /*min-height: 345px;*/
     border: 1px solid black;
     padding: 1vh;

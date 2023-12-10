@@ -19,7 +19,7 @@
     text-align: center;
     vertical-align: middle;
     color: white;
-    padding-top: calc(1vh - 5px);
+    padding-top: calc(2vh - 13px);
     font-size: calc(2vh + 3px);
     padding: auto;
 }

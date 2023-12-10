@@ -8,8 +8,8 @@
 .categoryName {
     display: block;
     font-size: calc(2vh);
-    height: 5vh;
-    width: 100%;
+    height: calc(6vh - 8px);
+    width: calc(13vh + 30px);
     background-color: white;
 
     
