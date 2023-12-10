@@ -59,8 +59,8 @@ table, tr, td {
 .selfDestruct {
     background-color: black;
     color: white;
-    height: 2vh;
-    width: 2vh;
+    height: 6vh;
+    width: 6vh;
     border-radius: 100%;
     position: absolute;
     top: 0;
