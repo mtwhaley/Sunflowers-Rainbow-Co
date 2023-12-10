@@ -18,7 +18,7 @@
     right: 0;
     text-align: center;
     color: white;
-    padding-top: calc(0.8vh - 3px);
+    padding-top: calc(0.7vh - 1px);
     font-size: calc(1.8vh);
     padding: auto;
 }
