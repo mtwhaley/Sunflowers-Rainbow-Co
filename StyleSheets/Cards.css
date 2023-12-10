@@ -18,10 +18,10 @@
     text-align: center;
     width: 28vh;
     min-width: 250px;
-    height: calc(42vh + 50px); /*width + name font size + price font size + addbutton height + margins*/
+    height: calc(40vh + 60px); /*width + name font size + price font size + addbutton height + margins*/
     /*min-height: 345px;*/
     border: 1px solid black;
-    padding: 5px;
+    padding: 1vh;
     margin: 0 0 0 20px;
     background-color: #ebdd78;
     border-radius: 5px;

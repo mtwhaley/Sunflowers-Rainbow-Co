@@ -20,7 +20,7 @@
     vertical-align: center;
     color: white;
     padding-top: 5px;
-    font-size: calc(10px + 1vw);
+    font-size: calc(2vh + 3px);
 }
 
 .navTable {
@@ -60,7 +60,7 @@
 
 
 .navButton {
-    width: 6vw;
+    width: 10vh;
     min-width: 85px;
     height: 5vh;
     min-height: 48px;
@@ -68,6 +68,6 @@
     border-radius: 5px;
     border: 2px solid black;
     font-weight: bold;
-    font-size: calc(12px + 0.4vh);
+    font-size: calc(2vh);
     margin: 0;
 }
