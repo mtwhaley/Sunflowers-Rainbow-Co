@@ -1,13 +1,13 @@
 
 .productname {
-    font-size: 20px;
+    font-size: calc(18px + 0.2vw);
     font-weight: bold;
 }
 .productimage {
     left: 0;
     top: 0;
     border: 2px solid black;
-    width: 200px;
+    width: 90%;
     height: 200px;
     margin-left: 0;
     border-radius: 5px;
@@ -16,8 +16,10 @@
 
 .cardstock {
     text-align: center;
-    width: 250px;
-    height: auto;
+    width: 15vw;
+    min-width: 250px;
+    height: 24vw;
+    min-height: 365px;
     border: 1px solid black;
     padding: 5px;
     margin: 0 0 0 20px;
@@ -25,14 +27,17 @@
     border-radius: 5px;
     -webkit-box-shadow: 2px 2px 2px black;
             box-shadow: 2px 2px 2px black;
+
+    font-size: calc(16px +0.2vw);
 }
 
 
 
 .addButton {
     position: relative;
-    height: 45px;
-    width: 45px;
+    height: 12%;
+    width: 18%;
+
     background-color: #edb826;
     border-radius: 100%;
     border: 2px solid black;
@@ -54,8 +59,8 @@
 
 .checkButton {
     position: relative;
-    height: 45px;
-    width: 45px;
+    height: 12%;
+    width: 18%;
     background-color: #37e615;
     border-radius: 100%;
     border: 2px solid black;
