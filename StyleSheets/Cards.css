@@ -7,8 +7,8 @@
     left: 0;
     top: 0;
     border: 2px solid black;
-    width: 28vh;
-    height: 28vh;
+    width: calc(28vh - 20px);
+    height: calc(28vh - 20px);
     margin-left: 0;
     border-radius: 5px;
 
@@ -18,7 +18,7 @@
     text-align: center;
     width: 28vh;
     min-width: 250px;
-    height: calc(47vh + 20px); /*width + name font size + price font size + addbutton height + margins*/
+    height: calc(42vh + 50px); /*width + name font size + price font size + addbutton height + margins*/
     /*min-height: 345px;*/
     border: 1px solid black;
     padding: 5px;
@@ -44,7 +44,7 @@
     text-align: center;
     vertical-align: center;
     color: black;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: bold;
     padding: auto;
     float: right;
@@ -66,7 +66,7 @@
     text-align: center;
     vertical-align: center;
     color: black;
-    font-size: 24px;
+    font-size: 4vh;
     font-weight: bold;
     padding: auto;
     float: right;

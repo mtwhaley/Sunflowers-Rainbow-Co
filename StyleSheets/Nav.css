@@ -7,20 +7,20 @@
 
 .cartQty {
     position: absolute;
-    width: 1.8vw;
-    height: 1.8vw;
+    width: 3.5vh;
+    height: 3.5vh;
     min-width: 18px;
     min-height: 18px;
     border-radius: 50%;
     border: 1px solid black;
     background-color: red;
-    top: calc(20vh - 48px);
+    top: 12.5vh;
     right: 0;
     text-align: center;
     vertical-align: center;
     color: white;
     padding-top: 5px;
-    font-size: calc(14px + 0.2vw);
+    font-size: calc(10px + 1vw);
 }
 
 .navTable {
