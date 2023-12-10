@@ -7,14 +7,14 @@
 
 .cartQty {
     position: absolute;
-    width: calc(2.5vh + 8px);
-    height: calc(2.5vh + 8px);
+    width: calc(2vh + 8px);
+    height: calc(2vh + 8px);
     min-width: 18px;
     min-height: 18px;
     border-radius: 50%;
     border: 1px solid black;
     background-color: red;
-    top: 12.7vh;
+    top: 13.4vh;
     right: 0;
     text-align: center;
     color: white;
