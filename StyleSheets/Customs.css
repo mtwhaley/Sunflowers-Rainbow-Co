@@ -11,8 +11,8 @@
     border: 2px solid black;
     -webkit-box-shadow: 2px 2px 2px;
             box-shadow: 2px 2px 2px;
-    width: 640px;
-    height: 1220px;
+    width: 90vh;
+    height: 170vh;
 
     max-width: 98vw;
 }
