@@ -24,7 +24,7 @@
 .navTable {
     color: black;
     font-weight: bold;
-    font-size: calc(12px +0.6vw);;
+    font-size: calc(12px +1vh);;
     table-layout: fixed;
     width: auto;
     border: 2px solid black;
