@@ -1,14 +1,14 @@
 
 .productname {
-    font-size: calc(16px + 0.4vh);
+    font-size: calc(12px + 1vh);
     font-weight: bold;
 }
 .productimage {
     left: 0;
     top: 0;
     border: 2px solid black;
-    width: 90%;
-    height: 200px;
+    width: 28vh;
+    height: 28vh;
     margin-left: 0;
     border-radius: 5px;
 
@@ -18,8 +18,8 @@
     text-align: center;
     width: 28vh;
     min-width: 250px;
-    height: calc(47vh + 5px); /*width + name font size + price font size + addbutton height + margins*/
-    min-height: 345px;
+    height: calc(47vh + 20px); /*width + name font size + price font size + addbutton height + margins*/
+    /*min-height: 345px;*/
     border: 1px solid black;
     padding: 5px;
     margin: 0 0 0 20px;
@@ -28,7 +28,7 @@
     -webkit-box-shadow: 2px 2px 2px black;
             box-shadow: 2px 2px 2px black;
 
-    font-size: calc(16px + 0.2vh);
+    font-size: calc(10px + 1vh);
 }
 
 
@@ -58,8 +58,8 @@
 
 .checkButton {
     position: relative;
-    height: 12%;
-    width: 18%;
+    height: 6vh;
+    width: 6vh;
     background-color: #37e615;
     border-radius: 100%;
     border: 2px solid black;
