@@ -11,7 +11,7 @@
     height: calc(6vh - 8px);
     width: calc(13vh + 30px);
     background-color: white;
-    border: calc(0.1vh + 1px) solid black;
+    border: 0.25vh solid black;
 
     
 }
@@ -35,7 +35,7 @@
     width: calc(13vh + 50px);
     height: auto;
     vertical-align: top;
-    border-width: calc(0.1vh + 1px) 0.1vh;
+    border-width: 0.25vh 0.15vh;
     border-color: black;
     border-style: solid;
     border-radius: 5px;
