@@ -24,7 +24,7 @@
 .navTable {
     color: black;
     font-weight: bold;
-    font-size: calc(16px +0.2vw);;
+    font-size: calc(12px +0.6vw);;
     table-layout: fixed;
     width: auto;
     border: 2px solid black;
@@ -35,7 +35,7 @@
 
 #topNav {
     position: absolute;
-    top: calc(20vh - 42px);
+    top: calc(15vh - 5px);
     right: 0;
     border-right: none;
     border-bottom: none;
