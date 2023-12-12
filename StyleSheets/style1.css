@@ -40,6 +40,7 @@ table, tr, td {
 
 
 .largeIMG {
+    position: relative;
     max-height: 90%;
     max-width: 90%;
 }
@@ -52,7 +53,7 @@ table, tr, td {
     top:0;
     z-index: 1;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
 
 
 }
@@ -63,8 +64,8 @@ table, tr, td {
     width: 6vh;
     border-radius: 100%;
     position: absolute;
-    top: 0;
-    right: 40px;
+    top: -2vh;
+    right: -2vh;
     margin-top: 20px;
     margin-right: 20px;
     font-size: calc(5vh - 4px);
