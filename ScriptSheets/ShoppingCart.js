@@ -59,9 +59,10 @@ function loadCartDisplay() {
         for (var i=0;i<idArray.length;i++) {
             subtotal+=Number((document.getElementById(idArray[i]).innerText).substring(1))
         }
+        totalsText.style.fontSize="calc(3px + 2vh)"
         totalsText.innerHTML="subtotal: $<span id='"+subtotalID+"'>"+(subtotal.toFixed(2))+"</span>"
-        totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: 18px;'>shipping: $"+shippingCost.toFixed(2)+"</span>"
-        totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: 18px'>taxes: $<span id='taxAmount'>"+getTaxes(subtotal)+"</span></span>"
+        totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: calc(3px + 1.8vh);'>shipping: $"+shippingCost.toFixed(2)+"</span>"
+        totalsText.innerHTML+="<br><br><span style='font-weight: normal; font-size: calc(3px + 1.8vh)'>taxes: $<span id='taxAmount'>"+getTaxes(subtotal)+"</span></span>"
         totalsText.innerHTML+="<br><br><br>total: $<span id='totalAmount'>"+getTotal(subtotal)+"</span>"
 
 
