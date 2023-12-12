@@ -1,7 +1,7 @@
 JSONData=[
   {
     "Item_Number": 100000,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Beanie",
     "Item_Description": "Blue",
     "Photo_File_Name": "126897834_101542028460872_6135392924853707682_n",
@@ -15,7 +15,7 @@ JSONData=[
   },
   {
     "Item_Number": 100001,
-    "Price": null,
+    "Price": 17,
     "Item_Name": "Beanie",
     "Item_Description": "Among Us",
     "Photo_File_Name": "127908329_107656214516120_2847748045883133988_n",
@@ -29,7 +29,7 @@ JSONData=[
   },
   {
     "Item_Number": 100002,
-    "Price": null,
+    "Price": 7,
     "Item_Name": "Scrunchie",
     "Item_Description": "",
     "Photo_File_Name": "131478803_114034527211622_14582335003068716_n",
@@ -43,7 +43,7 @@ JSONData=[
   },
   {
     "Item_Number": 100003,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Among Us Stuffy",
     "Item_Description": "",
     "Photo_File_Name": "136351763_121867979761610_5876160805895823192_n",
@@ -57,7 +57,7 @@ JSONData=[
   },
   {
     "Item_Number": 100004,
-    "Price": null,
+    "Price": 12,
     "Item_Name": "Bumble Bee",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "147298900_139948104620264_2693936306669262905_n",
@@ -71,7 +71,7 @@ JSONData=[
   },
   {
     "Item_Number": 100005,
-    "Price": null,
+    "Price": 14,
     "Item_Name": "Bunny",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "155846447_156193762995698_2258417616551773617_n",
@@ -113,7 +113,7 @@ JSONData=[
   },
   {
     "Item_Number": 100008,
-    "Price": null,
+    "Price": 7,
     "Item_Name": "Unicorn Slime",
     "Item_Description": "",
     "Photo_File_Name": "248057998_4058028880965040_8777596968558387090_n",
@@ -169,7 +169,7 @@ JSONData=[
   },
   {
     "Item_Number": 100012,
-    "Price": null,
+    "Price": 12,
     "Item_Name": "Christmas Headband",
     "Item_Description": "",
     "Photo_File_Name": "257869080_314653567149716_2795845133701269342_n",
@@ -183,7 +183,7 @@ JSONData=[
   },
   {
     "Item_Number": 100013,
-    "Price": null,
+    "Price": 11,
     "Item_Name": "Headband",
     "Item_Description": "",
     "Photo_File_Name": "257931149_314653650483041_138325899226657844_n",
@@ -197,7 +197,7 @@ JSONData=[
   },
   {
     "Item_Number": 100014,
-    "Price": null,
+    "Price": 10,
     "Item_Name": "Snowman",
     "Item_Description": "",
     "Photo_File_Name": "261508240_318315036783569_381717984777312932_n",
@@ -211,7 +211,7 @@ JSONData=[
   },
   {
     "Item_Number": 100015,
-    "Price": null,
+    "Price": 8,
     "Item_Name": "Drop Earrings",
     "Item_Description": "",
     "Photo_File_Name": "261746411_318978633383876_8569484342425932098_n",
@@ -225,7 +225,7 @@ JSONData=[
   },
   {
     "Item_Number": 100016,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Reindeer",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "263704479_321835573098182_6529911370987013744_n",
@@ -239,7 +239,7 @@ JSONData=[
   },
   {
     "Item_Number": 100017,
-    "Price": null,
+    "Price": 7,
     "Item_Name": "Slime",
     "Item_Description": "Unicorn",
     "Photo_File_Name": "263971121_323010479647358_3999714969080016170_n",
@@ -253,7 +253,7 @@ JSONData=[
   },
   {
     "Item_Number": 100018,
-    "Price": null,
+    "Price": 18,
     "Item_Name": "Sport Gnome",
     "Item_Description": "Football/Basketball",
     "Photo_File_Name": "264446022_325999472681792_7573310536109330558_n",
@@ -267,7 +267,7 @@ JSONData=[
   },
   {
     "Item_Number": 100019,
-    "Price": null,
+    "Price": 40,
     "Item_Name": "Throw",
     "Item_Description": "Blanket",
     "Photo_File_Name": "269839310_334256681856071_7497215306784876126_n",
@@ -281,7 +281,7 @@ JSONData=[
   },
   {
     "Item_Number": 100020,
-    "Price": null,
+    "Price": 22,
     "Item_Name": "Unicorn",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "271658186_343841374230935_6915517339520251829_n",
@@ -295,7 +295,7 @@ JSONData=[
   },
   {
     "Item_Number": 100021,
-    "Price": null,
+    "Price": 6,
     "Item_Name": "Cuzie",
     "Item_Description": "",
     "Photo_File_Name": "272249575_351574576790948_2927853947326874033_n",
@@ -309,7 +309,7 @@ JSONData=[
   },
   {
     "Item_Number": 100022,
-    "Price": null,
+    "Price": 20,
     "Item_Name": "Owl",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "272293192_352074036741002_9153152315042785970_n",
@@ -323,7 +323,7 @@ JSONData=[
   },
   {
     "Item_Number": 100023,
-    "Price": null,
+    "Price": 18,
     "Item_Name": "Legless Cat",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "272300391_352073773407695_962223573091190000_n",
@@ -337,7 +337,7 @@ JSONData=[
   },
   {
     "Item_Number": 100024,
-    "Price": null,
+    "Price": 7,
     "Item_Name": "St Patty Cuzie",
     "Item_Description": "",
     "Photo_File_Name": "274608743_370803984868007_1331650335103957545_n",
@@ -351,7 +351,7 @@ JSONData=[
   },
   {
     "Item_Number": 100025,
-    "Price": null,
+    "Price": 7,
     "Item_Name": "Cloud Slime",
     "Item_Description": "",
     "Photo_File_Name": "274824795_372866474661758_6009387000930312935_n",
@@ -365,7 +365,7 @@ JSONData=[
   },
   {
     "Item_Number": 100026,
-    "Price": null,
+    "Price": 20,
     "Item_Name": "Hanging Rope Basket",
     "Item_Description": "",
     "Photo_File_Name": "275511600_379286934019712_8600317695355310812_n",
@@ -379,7 +379,7 @@ JSONData=[
   },
   {
     "Item_Number": 100027,
-    "Price": null,
+    "Price": 22,
     "Item_Name": "Turtle and Baby",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "276053272_383977150217357_7132228235919004852_n",
@@ -393,7 +393,7 @@ JSONData=[
   },
   {
     "Item_Number": 100028,
-    "Price": null,
+    "Price": 12,
     "Item_Name": "Cow",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "276298845_383977380217334_6559698689458413365_n",
@@ -407,7 +407,7 @@ JSONData=[
   },
   {
     "Item_Number": 100029,
-    "Price": null,
+    "Price": 12,
     "Item_Name": "Kitten",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "282815015_432139442067794_3672828170756817908_n",
@@ -421,7 +421,7 @@ JSONData=[
   },
   {
     "Item_Number": 100030,
-    "Price": null,
+    "Price": 35,
     "Item_Name": "Satchel",
     "Item_Description": "",
     "Photo_File_Name": "289455237_449881296960275_6851531413155676955_n",
@@ -435,7 +435,7 @@ JSONData=[
   },
   {
     "Item_Number": 100031,
-    "Price": null,
+    "Price": 45,
     "Item_Name": "Sling Bag",
     "Item_Description": "",
     "Photo_File_Name": "291573432_455583626390042_3137819584250867976_n",
@@ -449,7 +449,7 @@ JSONData=[
   },
   {
     "Item_Number": 100032,
-    "Price": null,
+    "Price": 25,
     "Item_Name": "Clutch",
     "Item_Description": "",
     "Photo_File_Name": "293369969_461302655818139_6274199298928681473_n",
@@ -463,7 +463,7 @@ JSONData=[
   },
   {
     "Item_Number": 100033,
-    "Price": null,
+    "Price": 12,
     "Item_Name": "Octopus",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "294538580_465059282109143_3348812019680663640_n",
@@ -477,7 +477,7 @@ JSONData=[
   },
   {
     "Item_Number": 100034,
-    "Price": null,
+    "Price": 20,
     "Item_Name": "Giraffe",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "295840823_466251165323288_7349813196460573987_n",
@@ -491,7 +491,7 @@ JSONData=[
   },
   {
     "Item_Number": 100035,
-    "Price": null,
+    "Price": 35,
     "Item_Name": "Hobo Bag",
     "Item_Description": "",
     "Photo_File_Name": "296338255_473763151238756_2145628529733744076_n",
@@ -505,7 +505,7 @@ JSONData=[
   },
   {
     "Item_Number": 100036,
-    "Price": null,
+    "Price": 40,
     "Item_Name": "Bucket Bag",
     "Item_Description": "",
     "Photo_File_Name": "296343503_473763161238755_5497278348059666333_n",
@@ -519,7 +519,7 @@ JSONData=[
   },
   {
     "Item_Number": 100037,
-    "Price": null,
+    "Price": 10,
     "Item_Name": "Bat",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "296981624_473761911238880_1461563632627282337_n",
@@ -533,7 +533,7 @@ JSONData=[
   },
   {
     "Item_Number": 100038,
-    "Price": 0.01,
+    "Price": 5,
     "Item_Name": "Avocado",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "297426098_477650314183373_2337330748712274172_n",
@@ -547,7 +547,7 @@ JSONData=[
   },
   {
     "Item_Number": 100039,
-    "Price": null,
+    "Price": 18,
     "Item_Name": "Baby Yoda",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "298098586_474571734491231_4660749853635346934_n",
@@ -561,7 +561,7 @@ JSONData=[
   },
   {
     "Item_Number": 100040,
-    "Price": null,
+    "Price": 8,
     "Item_Name": "Ghost",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "298411279_476939824254422_7434524555209185144_n",
@@ -575,7 +575,7 @@ JSONData=[
   },
   {
     "Item_Number": 100041,
-    "Price": null,
+    "Price": 11,
     "Item_Name": "Baby Turtle",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "298758469_476857310929340_1292005105434381032_n",
@@ -589,7 +589,7 @@ JSONData=[
   },
   {
     "Item_Number": 100042,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Fox",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "309719458_518026213479116_2409729380510550124_n",
@@ -603,7 +603,7 @@ JSONData=[
   },
   {
     "Item_Number": 100043,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Ball Bracelet",
     "Item_Description": "",
     "Photo_File_Name": "310022736_518026233479114_5568448691814746812_n",
@@ -617,7 +617,7 @@ JSONData=[
   },
   {
     "Item_Number": 100044,
-    "Price": null,
+    "Price": 11,
     "Item_Name": "Pumpkin Voodoo",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "310263539_518025936812477_2286517661121807898_n",
@@ -631,7 +631,7 @@ JSONData=[
   },
   {
     "Item_Number": 100045,
-    "Price": null,
+    "Price": 11,
     "Item_Name": "Voodoo Doll",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "310993590_518025843479153_3673028332895432256_n",
@@ -645,7 +645,7 @@ JSONData=[
   },
   {
     "Item_Number": 100046,
-    "Price": null,
+    "Price": 25,
     "Item_Name": "Stocking",
     "Item_Description": "",
     "Photo_File_Name": "314035915_539601791321558_7265085727764631745_n",
@@ -659,7 +659,7 @@ JSONData=[
   },
   {
     "Item_Number": 100047,
-    "Price": null,
+    "Price": 8,
     "Item_Name": "Squirrel",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "315385775_545802454034825_8639285528574639407_n",
@@ -673,7 +673,7 @@ JSONData=[
   },
   {
     "Item_Number": 100048,
-    "Price": null,
+    "Price": 20,
     "Item_Name": "Grinch",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "315436069_546909110590826_2092830049408644832_n",
@@ -687,7 +687,7 @@ JSONData=[
   },
   {
     "Item_Number": 100049,
-    "Price": null,
+    "Price": 25,
     "Item_Name": "Long Cow",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "315583145_544336264181444_6583272595360358971_n",
@@ -701,7 +701,7 @@ JSONData=[
   },
   {
     "Item_Number": 100050,
-    "Price": null,
+    "Price": 40,
     "Item_Name": "Gnome Family",
     "Item_Description": "",
     "Photo_File_Name": "325436478_1816641438735647_1534981494149101756_n",
@@ -715,7 +715,7 @@ JSONData=[
   },
   {
     "Item_Number": 100051,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Floppy Dog",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "325440896_919515589496743_3015227967703962584_n",
@@ -729,7 +729,7 @@ JSONData=[
   },
   {
     "Item_Number": 100052,
-    "Price": null,
+    "Price": 17,
     "Item_Name": "KC Gnomes",
     "Item_Description": "",
     "Photo_File_Name": "326242025_720909249497513_7997750570978945269_n",
@@ -743,7 +743,7 @@ JSONData=[
   },
   {
     "Item_Number": 100053,
-    "Price": null,
+    "Price": 20,
     "Item_Name": "Tiger",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "326917267_582034483348068_4936568551938436279_n",
@@ -757,7 +757,7 @@ JSONData=[
   },
   {
     "Item_Number": 100054,
-    "Price": null,
+    "Price": 25,
     "Item_Name": "Hanging Plant",
     "Item_Description": "",
     "Photo_File_Name": "346649597_265955532462720_338688874700369190_n",
@@ -771,7 +771,7 @@ JSONData=[
   },
   {
     "Item_Number": 100055,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Baby Groot",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "347126906_247298851175808_3142709494587256992_n",
@@ -785,7 +785,7 @@ JSONData=[
   },
   {
     "Item_Number": 100056,
-    "Price": null,
+    "Price": 12,
     "Item_Name": "Baby Cow",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "349158789_764493061722855_7233391018025289998_n",
@@ -799,7 +799,7 @@ JSONData=[
   },
   {
     "Item_Number": 100057,
-    "Price": null,
+    "Price": 35,
     "Item_Name": "Half Moon Bag",
     "Item_Description": "",
     "Photo_File_Name": "349474172_635804778589278_7320163702800725639_n",
@@ -813,7 +813,7 @@ JSONData=[
   },
   {
     "Item_Number": 100058,
-    "Price": null,
+    "Price": 30,
     "Item_Name": "Folding Clutch",
     "Item_Description": "Purse",
     "Photo_File_Name": "349474190_1495946441232313_6534629312003787486_n",
@@ -827,7 +827,7 @@ JSONData=[
   },
   {
     "Item_Number": 100059,
-    "Price": null,
+    "Price": 45,
     "Item_Name": "Floral Half Moon Bag",
     "Item_Description": "",
     "Photo_File_Name": "349667737_952231059451092_2953721526475816976_n",
@@ -841,7 +841,7 @@ JSONData=[
   },
   {
     "Item_Number": 100060,
-    "Price": null,
+    "Price": 15,
     "Item_Name": "Baby Dragon",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "349984443_1289071175052647_1259138448897465762_n",
@@ -855,7 +855,7 @@ JSONData=[
   },
   {
     "Item_Number": 100061,
-    "Price": null,
+    "Price": 14,
     "Item_Name": "Elephant",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "356407576_747711377359801_5365661706017139857_n",
@@ -869,7 +869,7 @@ JSONData=[
   },
   {
     "Item_Number": 100062,
-    "Price": null,
+    "Price": 20,
     "Item_Name": "Fishing Polar Bear",
     "Item_Description": "Stuffed Animal",
     "Photo_File_Name": "357383158_748268447304094_1062511525962111203_n",
