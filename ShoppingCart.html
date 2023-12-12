@@ -25,7 +25,7 @@
             </div>
             <div id="payment">
                 <div id="contactInfo">
-                    <form action="http://localhost:1337" method="post">
+                    <form action="http://localhost:1337" method="post" style="position: relative;"">
                         <p style="font-weight: bold; font-size: 2.5vh;">Shipping Information:</p>
                         <hr><br>
                         <label for="fullname">Full Name: </label><br>
@@ -38,12 +38,11 @@
                         <input type="text" id="city" name="city">
                         <br><br>
                         <label for="state">State: </label>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <label for="zip">Zipcode: </label>
+                        <label for="zip" style="position: absolute;left: 50%;">Zipcode: </label>
                         <br>
                         <input type="text" id="state" name="state" style="width: 40%;">
                         &nbsp;&nbsp;
-                        <input type="text" name="zip" id="zip" style="width: 40%;">
+                        <input type="text" name="zip" id="zip" style="position: absolute; width: 40%; left: 50%;">
                         <br><br><br>
                         <input type="hidden" name="cost" id="cost">
                         <input type="hidden" name="order" id="order">

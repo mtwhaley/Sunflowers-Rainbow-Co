@@ -19,10 +19,9 @@
 #payment {
     margin-top: 20px;
     background-color: #ebdd78;
-    width: 400px;
-    min-height: 520px;
-    max-height: 700px;
-    min-width: 300px;
+    min-width: 400px;
+    width: 50vh;
+    height: 70vh;
     border-radius: 5px;
     border: 2px solid black;
     -webkit-box-shadow: 2px 2px 2px;
