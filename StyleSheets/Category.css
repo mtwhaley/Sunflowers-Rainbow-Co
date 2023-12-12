@@ -9,7 +9,7 @@
     display: block;
     font-size: calc(2.4vh - 2px);
     height: calc(7vh - 11px);
-    width: calc(13vh + 30px);
+    width: calc(6vh + 320px);
     background-color: white;
     border: 0.25vh solid black;
 
@@ -32,7 +32,7 @@
     display: flex;
     margin-top: 20px;
     background-color: #ffe8ba;
-    width: calc(13vh + 50px);
+    width: calc(6vh + 360px);
     height: auto;
     vertical-align: top;
     border-width: 0.25vh 0.15vh;
