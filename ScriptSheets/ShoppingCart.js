@@ -124,7 +124,7 @@ function getQtyPriceHTML(item) {
 
     const remove=document.createElement("button")
     remove.setAttribute("class", "remove")
-    remove.innerText="Remove"
+    remove.innerHTML="&#128465;"
     remove.onclick=function() {
         removeItemFromStorage(item)
         location.reload()
@@ -137,6 +137,7 @@ function getQtyPriceHTML(item) {
     p.style.marginRight="65px"
     p.style.width="100px"
     p.style.right="0"
+    p.style.fontSize="calc(5px + 2vh)"
 
     div.appendChild(qty)
     div.appendChild(remove)
@@ -176,8 +177,8 @@ function getItemInfoHTML(item) {
     const div=document.createElement("div")
     const p=document.createElement("p")
     div.setAttribute("class","nameDiv")
-    p.innerHTML=item.Item_Name+"<br>"
-    p.innerHTML+="<span style='font-size: 16px;'>&nbsp&nbsp"+item.Item_Description+"<br></span>"
+    p.innerHTML="<span style='font-size: calc(5px + 2vh);'>"+item.Item_Name+"</span><br>"
+    p.innerHTML+="&nbsp&nbsp"+item.Item_Description+"<br>"
     p.setAttribute("class","info")
 
     div.appendChild(p)
