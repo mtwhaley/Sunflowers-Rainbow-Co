@@ -1,9 +1,11 @@
 
 
 #jobFormDiv {
+    margin: auto;
+    padding-top: 30px;
     text-align: center;
-    width: calc(98vw - 8px);
-    height: 170vh;
+    width: 50vw;
+    height: 130vh;
     background-color: #ebdd78;
     margin-top: 20px;
     border-radius: 5px;
@@ -13,7 +15,7 @@
 #jobForm {
     display: flex;
     margin: 0;
-    width: 150%;
+    width: 100%;
     height: 100%;
     
     -webkit-box-shadow: 2px 2px 2px;
