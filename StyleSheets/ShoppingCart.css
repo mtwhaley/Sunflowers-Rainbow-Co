@@ -178,6 +178,9 @@ hr {
 
 
 @media (max-width: 1024px) {
+    #payment {
+        width: 80vw;
+    }
     #togglingSpacer {
         display: none;
     }
