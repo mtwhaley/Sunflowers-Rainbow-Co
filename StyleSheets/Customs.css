@@ -5,7 +5,9 @@
     padding-top: 30px;
     text-align: center;
     width: 50vw;
+    min-width: 350px;
     height: 130vh;
+    min-height: 1300px;
     background-color: #ebdd78;
     margin-top: 20px;
     border-radius: 5px;
