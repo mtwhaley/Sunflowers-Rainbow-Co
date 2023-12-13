@@ -163,7 +163,7 @@ hr {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .remove {
-        background-color: white;
+        background-color: black;
     }
 }
 

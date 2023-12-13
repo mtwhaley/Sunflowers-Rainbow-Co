@@ -267,3 +267,15 @@ function setFormData() {
     document.getElementById("order").value=JSONData
     
 }
+
+
+function testMobile(x) {
+    if (x.matches) {
+        const allRemoveButtons=document.getElementsByClassName("remove")
+        allRemoveButtons.forEach(button => {
+            button.innerHTML="Remove"
+        });
+    }
+}
+
+testMobile(window.matchMedia("(max-width: 1024px)"))
