@@ -160,3 +160,8 @@ hr {
     margin-left: 5px;
 }
 
+@media only screen and (max-width: 480px) {
+    .remove {
+        background-color: greenyellow;
+    }
+}
