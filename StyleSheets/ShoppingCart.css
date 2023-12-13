@@ -160,13 +160,21 @@ hr {
     margin-left: 5px;
 }
 
-@media only screen and (max-width: 480px) {
-    .remove {
-        background-color: greenyellow;
-    }
-}
+
 @media only screen and (max-width: 1024px) {
     .remove {
         background-color: cyan;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .remove {
+        background-color: plum;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .remove {
+        background-color: greenyellow;
     }
 }
