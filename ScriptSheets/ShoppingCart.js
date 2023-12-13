@@ -46,7 +46,7 @@ function loadCartDisplay() {
         
 
         const subtotalSpacer=document.createElement("p")
-        subtotalSpacer.innerHTML="<br><br><hr><br>"
+        subtotalSpacer.innerHTML="<span id='togglingSpacer'><br><br></span><hr><br>"
 
         cartDisplay.appendChild(subtotalSpacer)
 
