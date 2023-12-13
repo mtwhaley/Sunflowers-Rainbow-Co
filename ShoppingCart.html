@@ -72,6 +72,23 @@
             
             document.getElementById("bottomNav").style.position="fixed"
             document.getElementById("bottomNav").style.bottom="0"
+
+
+            function MobileChanges(x) {
+                if (x.matches) {
+                    const allRemoveButtons=document.getElementsByClassName("remove")
+                    for (var i=0;i<allRemoveButtons.length;i++) {
+                        console.log(allRemoveButtons[i])
+                        allRemoveButtons[i].innerHTML="Remove"
+                    }
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", function(e) {
+                var x=window.matchMedia("(max-width: 767px)")
+                MobileChanges(x)
+            })
+            
             
         </script>
     </body>

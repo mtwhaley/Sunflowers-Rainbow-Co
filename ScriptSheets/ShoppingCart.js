@@ -29,7 +29,7 @@ function loadCartDisplay() {
             const image=document.createElement("img")
             let source="Product Images/"+item.Photo_File_Name+".jpg"
             image.src=source
-            image.setAttribute("class","productimage")
+            image.setAttribute("class","cartimage")
             const imgID=item.Item_Number
             image.setAttribute("id",imgID)
             div.appendChild(image)
@@ -94,8 +94,11 @@ function getTaxes(subtotal) {
 }
 
 function getQtyPriceHTML(item) {
+    const outerDiv=document.createElement("div")
     const div=document.createElement("div")
-    div.setAttribute("class","priceDiv")
+    outerDiv.setAttribute("class","priceDiv")
+    const div2=document.createElement("div")
+    div2.setAttribute("class", "secondaryDiv")
     const qty=document.createElement("input")
     const qtyid=item.Item_Number+"qty"
     const priceid=item.Item_Number+"price"
@@ -134,16 +137,16 @@ function getQtyPriceHTML(item) {
 
     const p=document.createElement("p")
     p.setAttribute("id",priceid)
+    p.setAttribute("class", "productTotal")
     p.innerText="$"+(item.Price).toFixed(2)
-    p.style.marginRight="65px"
-    p.style.width="100px"
-    p.style.right="0"
-    p.style.fontSize="calc(5px + 2vh)"
+    
 
     div.appendChild(qty)
     div.appendChild(remove)
-    div.appendChild(p)
-    return div
+    div2.appendChild(p)
+    outerDiv.appendChild(div)
+    outerDiv.appendChild(div2)
+    return outerDiv
 }
 
 function removeItemFromStorage(item) {
@@ -269,13 +272,5 @@ function setFormData() {
 }
 
 
-function testMobile(x) {
-    if (x.matches) {
-        const allRemoveButtons=document.getElementsByClassName("remove")
-        allRemoveButtons.forEach(button => {
-            button.innerHTML="Remove"
-        });
-    }
-}
 
-testMobile(window.matchMedia("(max-width: 1024px)"))
+

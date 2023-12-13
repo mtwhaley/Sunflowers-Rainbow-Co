@@ -1,4 +1,14 @@
+.cartimage {
+    left: 0;
+    top: 0;
+    border: calc(0.1vh + 1px) solid black;
+    width: calc(28vh - 20px);
+    height: calc(28vh - 20px);
+    margin-left: 0;
+    border-radius: 5px;
 
+
+}
 
 #cartTable {
     display: -webkit-box;
@@ -43,8 +53,7 @@
 
 #cartItems {
     background-color: #ebdd78;
-    width: 100%;
-    max-width: 60vw;
+    width: 60vw;
     min-width: 200px;
     min-height: 200px;
     margin-top: 20px;
@@ -114,7 +123,6 @@ hr {
     margin-top: 20px;
     width: 100%;
     
-    background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,7 +133,6 @@ hr {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     row-gap: 20px;
-    margin-top: 20px;
 }
 
 .qty {
@@ -136,6 +143,7 @@ hr {
     font-size: 2.5vh;
     border-width: 2px;
     border-radius: 5px;
+    padding: 2px;
 }
 
 .remove {
@@ -147,7 +155,7 @@ hr {
     color: white;
     border-radius: 5px;
     font-size: 2.5vh;
-    padding: 0;
+    padding: 2px;
 }
 .remove:hover {
     background-color: #ff483b;
@@ -160,21 +168,62 @@ hr {
     margin-left: 5px;
 }
 
+.productTotal {
+    margin-right: 65px;
+    width: 100px;
+    right: 0;
+    font-size: calc(5px + 2vh);
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .remove {
-        background-color: black;
-    }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-    .remove {
-        background-color: plum;
-    }
-}
 
-@media only screen and (max-width: 480px) {
-    .remove {
-        background-color: greenyellow;
+@media (max-width: 1024px) {
+    .cartimage {
+        position: relative;
+        width: 30vw;
+        height: 30vw;
+        height: 100;
+        margin-left: auto;
+        margin-right: auto;
     }
+    #cartItems {
+        padding-left: 0;
+    }
+    .cartProduct {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info {
+        margin: 0;
+        text-align: center;
+    }
+    .qty {
+        margin-left: 0;
+    }
+    .remove {
+        bottom: 0;
+        background-color: red;
+        width: 10vh;
+    }
+    .nameDiv {
+        padding: 0;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .priceDiv {
+        padding: 0;
+        width: 100%;
+        height: 17vh;
+        text-align: center;
+        border-bottom: 1px dashed #916943;
+
+    }
+    .productTotal {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
 }
