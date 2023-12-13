@@ -77,11 +77,12 @@
             function MobileChanges(x) {
                 
                 if (x.matches) {
-                    document.getElementById("togglingSpacer").style.display="none"
+                    
                     const allRemoveButtons=document.getElementsByClassName("remove")
                     for (var i=0;i<allRemoveButtons.length;i++) {
                         allRemoveButtons[i].innerHTML="Remove"
                     }
+                    document.getElementById("togglingSpacer").style.display="none"
                 }
             }
 
