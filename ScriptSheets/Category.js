@@ -7,14 +7,28 @@ function ResetCategoryBackgrounds() {
             child.style.backgroundColor=""
         }
     });
+    const melements=document.getElementById("mobileCategoryDiv").childNodes
+    melements.forEach(child => {
+        if (child.nodeName=="BUTTON") {
+            child.style.backgroundColor=""
+        }
+    });
 }
 
 async function filterCategories(catID=undefined) {
     ResetCategoryBackgrounds()
     if (catID!=undefined) {
         const categoryClicker=document.getElementById(catID)
-        categoryClicker.style.backgroundColor="#edb826"
+        const mobileButtonId="m"+catID
+        const categoryClicker2=document.getElementById(mobileButtonId)
 
+        categoryClicker.style.backgroundColor="#edb826"
+        categoryClicker2.style.backgroundColor="#edb826"
+
+    }
+    else {
+        document.getElementById("All").style.backgroundColor="#edb826"
+        document.getElementById("mAll").style.backgroundColor="#edb826"
     }
     const productDiv=document.getElementById("productSpace")
     const elements=productDiv.childNodes

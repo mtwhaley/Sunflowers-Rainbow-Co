@@ -17,9 +17,23 @@
 
             <p id="businessName"> S u n f l o w e r &nbsp; & &nbsp; R a i n b o w &nbsp; c o </p>
         </div>
+        <div id="mobileCategoryDiv">
+            <div style="width: 100%; text-align: center;">
+                <p id="mobileCategoryText">Shop Categories</p>
+            </div>
+            <button class="categoryName" id="mDecor" onclick="filterCategories('Decor')">Decor</button>
+            <button class="categoryName" id="mStuffed" onclick="filterCategories('Stuffed')">Stuffed Animals</button>
+            <button class="categoryName" id="mApparel" onclick="filterCategories('Apparel')">Apparel</button>
+            <button class="categoryName" id="mSeasonal" onclick="filterCategories('Seasonal')">Seasonal</button>
+            <button class="categoryName" id="mThemed" onclick="filterCategories('Themed')">Themed</button>
+            <button class="categoryName" id="mSlime" onclick="filterCategories('Slime')">Slime</button>
+            <button class="categoryName" id="mMisc" onclick="filterCategories('Misc')">Misc</button>
+            <button class="categoryName" id="mAll" onclick="filterCategories()" style="background-color: #edb826">All</button>
+                            
+        </div>
         <table style="width: 100%; height: auto;">
             <tr>
-                <td style="width: 20vw; vertical-align: top; min-width: 150px;">
+                <td style="width: 20vw; vertical-align: top; min-width: 150px;" id="categoryCell">
                     <div id="categorySpace">
                         <p id="categoryText">
                             Shop Categories
@@ -31,7 +45,7 @@
                             <button class="categoryName" id="Themed" onclick="filterCategories('Themed')">Themed</button><br><br>
                             <button class="categoryName" id="Slime" onclick="filterCategories('Slime')">Slime</button><br><br>
                             <button class="categoryName" id="Misc" onclick="filterCategories('Misc')">Miscellaneous</button><br><br>
-                            <button class="categoryName" id="All" onclick="filterCategories()">All</button><br><br>
+                            <button class="categoryName" id="All" onclick="filterCategories()" style="background-color: #edb826">All</button><br><br>
                             
                             
                         </p>

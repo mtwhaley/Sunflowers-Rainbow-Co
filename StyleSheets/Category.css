@@ -43,3 +43,40 @@
     border-radius: 5px;
 
 }
+
+#mobileCategoryDiv {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    #categoryCell {
+        display: none;
+    }
+    #productSpace {
+        justify-content: center;
+    }
+    #mobileCategoryDiv {
+        width: calc(100% - 0.6vh);
+        display: flex;
+        margin-top: 4vh;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 0.3vh solid black;
+        background-color: #ffe8ba;
+    }
+    #mobileCategoryDiv button {
+        margin: 0 2vh 2vh 2vh;
+        height: 8vh;
+        width: 12vh;
+        font-weight: bold;
+        border-radius: 50%;
+
+    }
+    #mobileCategoryText {
+        font-weight: bold;
+        font-size: 4vh;
+        margin: 0 0 2vh 0;
+
+    }
+}
