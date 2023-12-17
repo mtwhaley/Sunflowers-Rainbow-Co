@@ -24,6 +24,7 @@
     border: calc(0.1vh + 1px) solid black;
     padding: 1vh;
     margin: 0 0 0 20px;
+    background-image: linear-gradient(to bottom right, white, var(--buttonColor), var(--cardColor), white); 
     background-color: var(--cardColor);
     border-radius: 5px;
     -webkit-box-shadow: 0.25vh 0.25vh 0.25vh black;
@@ -62,7 +63,7 @@
     position: absolute;
     height: 6vh;
     width: 6vh;
-    background-color: #37e615;
+    background-color: #6aff00;
     border-radius: 100%;
     border: 0.2vh solid black;
     text-align: center;

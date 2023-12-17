@@ -22,13 +22,13 @@ async function filterCategories(catID=undefined) {
         const mobileButtonId="m"+catID
         const categoryClicker2=document.getElementById(mobileButtonId)
 
-        categoryClicker.style.backgroundColor="#edb826"
-        categoryClicker2.style.backgroundColor="#edb826"
+        categoryClicker.style.backgroundColor="var(--buttonColor)"
+        categoryClicker2.style.backgroundColor="var(--buttonColor)"
 
     }
     else {
-        document.getElementById("All").style.backgroundColor="#edb826"
-        document.getElementById("mAll").style.backgroundColor="#edb826"
+        document.getElementById("All").style.backgroundColor="var(--buttonColor)"
+        document.getElementById("mAll").style.backgroundColor="var(--buttonColor)"
     }
     const productDiv=document.getElementById("productSpace")
     const elements=productDiv.childNodes

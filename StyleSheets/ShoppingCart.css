@@ -28,12 +28,13 @@
 
 #payment {
     margin-top: 20px;
+    
     background-color: var(--cardColor);
     min-width: 400px;
     width: 50vh;
     height: 70vh;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 0.25vh solid black;
     -webkit-box-shadow: 2px 2px 2px;
             box-shadow: 2px 2px 2px;
     text-align: center;
@@ -63,6 +64,7 @@
     text-align: center;
     font-size: calc(3px + 2vh);
     font-weight: bold;
+    border: 0.25vh solid black;
     border-radius: 5px;
     margin-bottom: 70px;
     -webkit-box-shadow: 2px 2px 2px;

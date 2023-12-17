@@ -17,7 +17,7 @@
     
 }
 .categoryName:hover {
-    background-color: var(--buttonColor);
+    background-color: var(--fadedButtonColor);
 }
 
 #categoryText {
@@ -63,6 +63,7 @@
         flex-wrap: wrap;
         justify-content: center;
         border: 0.3vh solid black;
+        background: radial-gradient(var(--categoryColor), var(--categoryColor), #af58ed );
         background-color: var(--categoryColor);
     }
     #mobileCategoryDiv button {

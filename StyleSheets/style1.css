@@ -1,20 +1,22 @@
 :root {
-    --background: #facad6;
-    --cardColor: #db7489;
-    --categoryColor: #bbf0eb ;
-    --buttonColor: #facad6;
+    --background: #FAE1BD;
+    --cardColor: #70ff9b;
+    --categoryColor: #ed58eb ;
+    --buttonColor: #07faf2;
+    --navBackground: #db99e8;
 
     
     
 
-    --fadedButtonColor: #ffde82;
-    --cartDash: #916943;
+    --fadedButtonColor: #c7fff1;
+    --cartDash: gray;
 }
 
 html {
     height: 100vh;
     width: calc(100vw - (100vw - 100%));
-    background-color: var(--background);
+    background-image: linear-gradient(to right, #6aff00, #00e5ff, #5500ff); 
+    /*background-color: var(--background);*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     
