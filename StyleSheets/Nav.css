@@ -30,7 +30,7 @@
     table-layout: fixed;
     width: auto;
     border: 0.15vh solid black;
-    background-color: #916943;
+    background-color: var(--background);
     border-radius: 5px 5px 0 0;
     border-bottom: none;
 }
@@ -46,7 +46,7 @@
 #bottomNav {
     width: 100%;
     margin-top: 20px;
-    background-color: #ffe8ba;
+    background-color: var(--categoryColor);
     padding: calc(0.3vh) 0 calc(0.3vh) 0;
 }
 #bottomNav .navButton {
@@ -62,7 +62,7 @@
 }
 
 .navButton:hover {
-    background-color: #edb826;
+    background-color: var(--buttonColor);
 }
 
 

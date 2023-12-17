@@ -24,7 +24,7 @@
     border: calc(0.1vh + 1px) solid black;
     padding: 1vh;
     margin: 0 0 0 20px;
-    background-color: #ebdd78;
+    background-color: var(--cardColor);
     border-radius: 5px;
     -webkit-box-shadow: 0.25vh 0.25vh 0.25vh black;
             box-shadow: 0.25vh 0.25vh 0.25vh black;
@@ -39,7 +39,7 @@
     height: 6vh;
     width: 6vh;
 
-    background-color: #edb826;
+    background-color: var(--buttonColor);
     border-radius: 100%;
     border: 0.2vh solid black;
     text-align: center;
@@ -55,7 +55,7 @@
 }
 
 .addButton:hover {
-    background-color: #ffde82;
+    background-color: var(--fadedButtonColor);
 }
 
 .checkButton {

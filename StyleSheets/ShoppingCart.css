@@ -28,7 +28,7 @@
 
 #payment {
     margin-top: 20px;
-    background-color: #ebdd78;
+    background-color: var(--cardColor);
     min-width: 400px;
     width: 50vh;
     height: 70vh;
@@ -52,7 +52,7 @@
 }
 
 #cartItems {
-    background-color: #ebdd78;
+    background-color: var(--cardColor);
     width: 60vw;
     min-width: 200px;
     min-height: 200px;
@@ -224,7 +224,7 @@ hr {
         width: 100%;
         height: 17vh;
         text-align: center;
-        border-bottom: 1px dashed #916943;
+        border-bottom: 1px dashed var(--cartDash);
 
     }
     .productTotal {

@@ -17,7 +17,7 @@
     
 }
 .categoryName:hover {
-    background-color: #edb826;
+    background-color: var(--buttonColor);
 }
 
 #categoryText {
@@ -32,7 +32,7 @@
     display: -ms-flexbox;
     display: flex;
     margin-top: 20px;
-    background-color: #ffe8ba;
+    background-color: var(--categoryColor);
     width: calc(6vh + 360px);
     max-width: 36vw;
     height: auto;
@@ -63,7 +63,7 @@
         flex-wrap: wrap;
         justify-content: center;
         border: 0.3vh solid black;
-        background-color: #ffe8ba;
+        background-color: var(--categoryColor);
     }
     #mobileCategoryDiv button {
         margin: 0 2vh 2vh 2vh;
