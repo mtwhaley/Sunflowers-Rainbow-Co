@@ -1,14 +1,48 @@
+label {
+    font-size: 2vh;
+    font-weight: bold;
+}
+input, textarea {
+    font-size: 1.8vh;
+    width: 100%;
+    margin: 2vh 0 5vh calc(-0.25vh - 1px);
+    height: 2.2vh;
+    border: 0.25vh solid black;
+    border-radius: 2px;
+}
+textarea {
+    height: 17vh;
+    
+}
+input[type=submit] {
+    height: 5vh;
+    width: 10vh;
+    background-color: #383838;
+    color: white;
+    font-weight: bold;
+}
 
+input[type=submit]:hover {
+    background-color: #6b6b6b;
+}
+
+#centeringForm {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 40%;
+}
 
 #jobFormDiv {
     position: relative;
     margin: auto;
+    
     padding-top: 30px;
     text-align: center;
     width: 50vw;
     min-width: 350px;
     max-width: calc(100% - 4px);
-    height: 180vh;
+    
     
     max-height: 1300px;
 
@@ -39,5 +73,8 @@
 @media (max-width: 1024px) {
     #jobFormDiv {
         width: 100%;
+    }
+    #centeringForm {
+        width: 80%;
     }
 }
