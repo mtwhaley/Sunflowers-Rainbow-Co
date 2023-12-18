@@ -28,7 +28,7 @@
                     <input type="text" name="entry.150634824" required><br><br>
 
                     <label for="entry.497333797">Phone Number: </label><br>
-                    <input type="text" name="entry.497333797" required><br><br>
+                    <input type="text" name="entry.497333797" id="ph" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" onchange="formatPhoneNumber()" maxlength="13" required><br><br>
 
                     <label for="entry.1919982919">Email Address:</label><br>
                     <input type="text" name="entry.1919982919" required><br><br>
@@ -53,12 +53,36 @@
         document.getElementById("bottomNav").style.position="fixed"
         document.getElementById("bottomNav").style.bottom="0"
 
-        function adjustIFrame() {
-            const form=document.getElementById("jobForm")
-            form.style.fontSize="100px";
+        function formatPhoneNumber(){
+            const ph=document.getElementById("ph")
+            let initial=ph.value
+            let numbersOnly=""
+            let formatted=""
+            for(var i=0;i<initial.length;i++) {
+                if (!isNaN(Number(initial[i]))) {
+                    numbersOnly+=initial[i]
+                }
+            }
+            if (numbersOnly.length>=3) {
+                formatted="("+numbersOnly.substring(0,3)+")"
+                if (numbersOnly.length>=6) {
+                    formatted+=numbersOnly.substring(3,6)+"-"
+                    if (numbersOnly.length>6) {
+                        formatted+=numbersOnly.substring(6)
+                    }
 
+                }
+                else {
+                    formatted+=numbersOnly.substring(3)
+                }
+
+            }
+            else {
+                formatted=numbersOnly
+            }
+            ph.value=formatted
+            return initial;
+            
         }
-
-        //adjustIFrame()
     </script>
 </html>
