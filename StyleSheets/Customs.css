@@ -1,12 +1,13 @@
 
 
 #jobFormDiv {
+    position: relative;
     margin: auto;
     padding-top: 30px;
     text-align: center;
     width: 50vw;
     min-width: 350px;
-    max-width: 100%;
+    max-width: calc(100% - 4px);
     height: 180vh;
     
     max-height: 1300px;
@@ -15,13 +16,19 @@
     margin-top: 20px;
     border-radius: 5px;
     border: 2px solid black;
+
+    overflow: auto;
+  -webkit-overflow-scrolling: touch; /*<<--- THIS IS THE KEY*/ 
 }
 
 #jobForm {
-    display: flex;
+    position: absolute;
     margin: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    font-size: 100px;
     
     -webkit-box-shadow: 2px 2px 2px;
             box-shadow: 2px 2px 2px;
