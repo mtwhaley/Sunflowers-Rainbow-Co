@@ -24,7 +24,7 @@
     border: calc(0.1vh + 1px) solid black;
     padding: 1vh;
     margin: 0 0 0 20px;
-    background-image: linear-gradient(to bottom right, white, var(--buttonColor), var(--cardColor), white); 
+    /*background-image: linear-gradient(to bottom right, white, var(--buttonColor), var(--cardColor), white); */
     background-color: var(--cardColor);
     border-radius: 5px;
     -webkit-box-shadow: 0.25vh 0.25vh 0.25vh black;
@@ -74,5 +74,9 @@
     padding: auto;
     right: 10px;
     bottom: 10px;
+}
+
+.checkButton:hover {
+    background-color: #73e522;
 }
 

@@ -25,7 +25,7 @@
             </div>
             <div id="payment">
                 <div id="contactInfo">
-                    <form action="http://localhost:1337" method="post" style="position: relative;"">
+                    <form action="http://localhost:1337" method="post" style="position: relative;" onsubmit="purchaseClicked()">
                         <p style="font-weight: bold; font-size: 2.5vh;">Shipping Information:</p>
                         <hr><br>
                         <label for="fullname">Full Name: </label><br>
@@ -57,8 +57,12 @@
         
 
         <div id="navSpace"></div>
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            const stripePublicKey="pk_test_51OH5quITAKqv2e6MIwXIHUlFr8pKAIUCbJJ329k9ldVILJhJdBTiWrKCetjyNSHvb0Rycb5y07A4AfhEWkkrmZ8a0007iZVQp1"
 
-
+        </script>
+        <script src="ScriptSheets/Payment.js" defer></script>
         <script src="ScriptSheets/General.js"></script>
         <script src="ScriptSheets/ShoppingCart.js"></script>
         
@@ -72,6 +76,22 @@
             
             document.getElementById("bottomNav").style.position="fixed"
             document.getElementById("bottomNav").style.bottom="0"
+
+            var stripeHandler=StripeCheckout.configure({
+                key: stripePublicKey,
+                locale: 'en',
+                token: function(token) {
+
+                }
+            })
+
+            function purchaseClicked() {
+                const pennyAmount=((Number(document.getElementById("totalAmount").innerHTML))*100).toFixed(0)
+
+                stripeHandler.open({
+                    amount: pennyAmount
+                })
+            }
 
 
             function MobileChanges(x) {

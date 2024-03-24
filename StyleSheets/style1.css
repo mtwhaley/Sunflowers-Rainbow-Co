@@ -1,22 +1,22 @@
 :root {
-    --background: #FAE1BD;
-    --cardColor: #70ff9b;
-    --categoryColor: #ed58eb ;
-    --buttonColor: #07faf2;
-    --navBackground: #db99e8;
+    --background: #b89a70;
+    --cardColor: #e0e66a;
+    --categoryColor: #f0c18e ;
+    --buttonColor: #e8b22b;
+    --navBackground: #f0c18e;
 
     
     
 
-    --fadedButtonColor: #c7fff1;
+    --fadedButtonColor: #f8dc78;
     --cartDash: gray;
 }
 
 html {
     height: 100vh;
     width: calc(100vw - (100vw - 100%));
-    background-image: linear-gradient(to right, #6aff00, #00e5ff, #5500ff); 
-    /*background-color: var(--background);*/
+    /*background-image: linear-gradient(to right, #6aff00, #00e5ff, #5500ff); */
+    background-color: var(--background);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     
